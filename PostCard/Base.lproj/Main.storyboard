@@ -117,6 +117,16 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8mn-nk-PRJ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqo-oA-sex">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="431" width="290" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -127,6 +137,7 @@
                                 <exclude reference="6bc-qa-Gxc"/>
                                 <exclude reference="wFF-As-6p9"/>
                                 <exclude reference="HJC-1B-31s"/>
+                                <exclude reference="cqo-oA-sex"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -137,14 +148,17 @@
                                 <include reference="6bc-qa-Gxc"/>
                                 <include reference="wFF-As-6p9"/>
                                 <include reference="HJC-1B-31s"/>
+                                <include reference="cqo-oA-sex"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="enterAMessageTextField" destination="tEI-ux-gg4" id="qzJ-VO-9gx"/>
+                        <outlet property="enterNameTextField" destination="uIN-Uu-GPp" id="CAb-NF-9iY"/>
                         <outlet property="mailButton" destination="HJC-1B-31s" id="BeT-fV-HmU"/>
-                        <outlet property="messageLabel" destination="6bc-qa-Gxc" id="FIx-bh-NJ4"/>
+                        <outlet property="messageLabel" destination="6bc-qa-Gxc" id="bEp-l2-9Ab"/>
+                        <outlet property="nameLabel" destination="cqo-oA-sex" id="YC5-Z3-GeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
